@@ -16,6 +16,7 @@ for section_name in section_names:
     json_array.append(section_dict)
 
 json_object = json.dumps(json_array)
+print(json_object)
 jsonFile = open("faqs.json", "w")
 jsonFile.write(json_object)
 jsonFile.close()
